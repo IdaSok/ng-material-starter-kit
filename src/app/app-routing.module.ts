@@ -4,6 +4,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoriesListComponent } from './components/categories-list/categories-list.component';
 import { CategoriesMenuComponent } from './components/categories-menu/categories-menu.component';
+import { CryptoComponent } from './components/crypto/crypto.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductsServiceModule } from './services/products.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
@@ -12,14 +13,17 @@ import { CategoriesListComponentModule } from './components/categories-list/cate
 import { CheckboxCategoriesServiceModule } from './services/checkbox-categories.service-module';
 import { CategoriesMenuComponentModule } from './components/categories-menu/categories-menu.component-module';
 import { CategoriesMenuServiceModule } from './services/categories-menu.service-module';
+import { CryptoComponentModule } from './components/crypto/crypto.component-module';
+import { CryptoServiceModule } from './services/crypto.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
     path: 'products', component: ProductListComponent }, {
     path: 'categories', component: CategoriesComponent }, {
     path: 'checkbox-categories', component: CategoriesListComponent }, {
-    path: 'categories-menu', component: CategoriesMenuComponent
-  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule],
+    path: 'categories-menu', component: CategoriesMenuComponent }, {
+    path: 'crypto', component: CryptoComponent
+  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, CryptoComponentModule, CryptoServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
