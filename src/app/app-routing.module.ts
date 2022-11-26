@@ -8,6 +8,7 @@ import { CryptoComponent } from './components/crypto/crypto.component';
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
 import { ProductSearchComponent } from './components/product-search/product-search.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
+import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductsServiceModule } from './services/products.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
@@ -23,6 +24,8 @@ import { PublicHolidaysServiceModule } from './services/public-holidays.service-
 import { ProductSearchComponentModule } from './components/product-search/product-search.component-module';
 import { ProductSearchServiceModule } from './services/product-search.service-module';
 import { ProductFormComponentModule } from './components/product-form/product-form.component-module';
+import { CreateEmployeeComponentModule } from './components/create-employee/create-employee.component-module';
+import { CreateEmployeeServiceModule } from './services/create-employee.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -33,8 +36,9 @@ import { ProductFormComponentModule } from './components/product-form/product-fo
     path: 'crypto', component: CryptoComponent }, {
     path: 'public-holidays', component: PublicHolidaysComponent }, {
     path: 'product-search', component: ProductSearchComponent }, {
-    path: 'create-product', component: ProductFormComponent
-  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, CryptoComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, ProductSearchComponentModule, ProductSearchServiceModule, ProductFormComponentModule],
+    path: 'create-product', component: ProductFormComponent }, {
+    path: 'create-employee', component: CreateEmployeeComponent
+  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, CryptoComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, ProductSearchComponentModule, ProductSearchServiceModule, ProductFormComponentModule, CreateEmployeeComponentModule, CreateEmployeeServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
