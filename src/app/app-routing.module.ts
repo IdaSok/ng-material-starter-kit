@@ -7,6 +7,7 @@ import { CategoriesMenuComponent } from './components/categories-menu/categories
 import { CryptoComponent } from './components/crypto/crypto.component';
 import { PublicHolidaysComponent } from './components/public-holidays/public-holidays.component';
 import { ProductSearchComponent } from './components/product-search/product-search.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductsServiceModule } from './services/products.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
@@ -21,6 +22,7 @@ import { PublicHolidaysComponentModule } from './components/public-holidays/publ
 import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
 import { ProductSearchComponentModule } from './components/product-search/product-search.component-module';
 import { ProductSearchServiceModule } from './services/product-search.service-module';
+import { ProductFormComponentModule } from './components/product-form/product-form.component-module';
 
 @NgModule({
   imports: [RouterModule.forRoot([{
@@ -30,8 +32,9 @@ import { ProductSearchServiceModule } from './services/product-search.service-mo
     path: 'categories-menu', component: CategoriesMenuComponent }, {
     path: 'crypto', component: CryptoComponent }, {
     path: 'public-holidays', component: PublicHolidaysComponent }, {
-    path: 'product-search', component: ProductSearchComponent
-  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, CryptoComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, ProductSearchComponentModule, ProductSearchServiceModule],
+    path: 'product-search', component: ProductSearchComponent }, {
+    path: 'create-product', component: ProductFormComponent
+  }]), ProductListComponentModule, ProductsServiceModule, CategoriesComponentModule, CategoriesServiceModule, CategoriesListComponentModule, CheckboxCategoriesServiceModule, CategoriesMenuComponentModule, CategoriesMenuServiceModule, CryptoComponentModule, CryptoServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, ProductSearchComponentModule, ProductSearchServiceModule, ProductFormComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
