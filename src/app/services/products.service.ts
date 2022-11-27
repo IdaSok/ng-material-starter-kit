@@ -13,7 +13,7 @@ export class ProductsService {
   }
 
   create(product: Omit<ProductModel, 'id'>): Observable<ProductModel> {
-    return this._httpClient.post<ProductModel>('https://fakestoreapi.com/products',product);
+    return this._httpClient.post<ProductModel>('https://fakestoreapi.com/products', product);
   }
 }
 

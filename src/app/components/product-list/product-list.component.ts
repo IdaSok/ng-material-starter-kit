@@ -11,7 +11,7 @@ import { ProductsService } from '../../services/products.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductListComponent {
-  readonly list$: Observable<ProductModel[]> = this._productsService.getAll();
+ readonly list$: Observable<ProductModel[]> = this._productsService.getAll();
 
   constructor(private _productsService: ProductsService) {
   }

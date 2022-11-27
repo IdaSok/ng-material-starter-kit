@@ -11,4 +11,7 @@ export class CategoriesMenuService {
   getAll(): Observable<ProductModel[]> {
     return this._httpClient.get<ProductModel[]>('https://fakestoreapi.com/products/categories');
   }
+  create(product: Omit<ProductModel, 'id'>): Observable<ProductModel> {
+    return this._httpClient.post<ProductModel>('https://fakestoreapi.com/products/categories', product);
+  }
 }
