@@ -3,7 +3,6 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { ProductsService } from '../../services/products.service';
 import {Observable} from "rxjs";
 import {ProductModel} from "../../models/product.model";
-import {CategoriesMenuService} from "../../services/categories-menu.service";
 import {CategoriesService} from "../../services/categories.service";
 
 
